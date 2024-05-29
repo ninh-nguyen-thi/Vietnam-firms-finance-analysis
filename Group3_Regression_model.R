@@ -18,7 +18,7 @@ library(lmtest)
 library(car)
 
 
-data <- read_dta("E:/Business Forecasting/Assignment 1/Viet-Nam-2023.dta")
+data <- read_dta("E:/Business Forecasting/Assignment 1/Viet-Nam-2023-full-data.dta")
 financetab_filtered <- data[, c(2:5,171:176, 179:191, 194:215,224)]
 financetab_filtered[financetab_filtered < 0] <- NA
 # view(financetab_filtered)
